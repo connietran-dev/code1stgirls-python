@@ -16,3 +16,5 @@ print('This is the alternative to fstrings back in the day: {} cats need {} cans
 
 # FYI for the homework:
 # print(f'You need to buy {message} nails')
+
+# Testing yet another comment
