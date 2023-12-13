@@ -20,8 +20,10 @@ for number in range(3):
     print(f'The total is {total}')
     print('Adding one to the loop')
     total += 1
+    print(oranges)
 
+print(f'Oranges!! {oranges}')
 print(f'Oranges: {oranges +2}')
 print(f'The final total is {total}')
-print(f'Is the number available? {number}')
+print(f'Is the number available? {number}') # number is the index
 
