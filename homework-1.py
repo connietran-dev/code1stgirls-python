@@ -59,10 +59,12 @@ omelettes with 6 boxes of eggs".
 '''
 
 eggs_per_box = 6
-eggs_per_omeltte = 4
+eggs_per_omelette = 4
 
 boxes_of_eggs = 6
 
-total_omelettes = (eggs_per_box * boxes_of_eggs) / eggs_per_omeltte
 
-print(f'You can make {total_omelettes} omelettes with {boxes_of_eggs} boxes of eggs.')
+total_omelettes = int((eggs_per_box * boxes_of_eggs) / eggs_per_omelette)
+leftover_eggs = (boxes_of_eggs * eggs_per_box) % eggs_per_omelette
+
+print(f'You can make {total_omelettes} omelettes with {boxes_of_eggs} boxes of eggs with {leftover_eggs} eggs left over.')

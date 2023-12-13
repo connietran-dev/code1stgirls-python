@@ -6,8 +6,6 @@ print(2)
 
 # hello this is a comment!
 
-# yay i almost forgot what the keyboard shortcut is for comments
-
 # Integers
 
 """
