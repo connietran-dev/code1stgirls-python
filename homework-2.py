@@ -9,10 +9,10 @@ print(output)
 
 '''
 
-# for number in range(100):
-#     print(number)
-#     output = 'o' * number
-#     print(output)
+for number in range(100):
+    print(number)
+    output = 'o' * number
+    print(output)
 
 # Concatenates and prints out 'o' the times of the index (including 0) up until 100
 
