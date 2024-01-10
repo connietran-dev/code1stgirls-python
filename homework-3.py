@@ -58,11 +58,12 @@ import datetime
 from datetime import datetime
 from datetime import date
 
-book_question = int(input('What year was your book written?: '))
+book_question = datetime.fromtimestamp(int(input('What year was your book written?: ')))
 
-book_date = datetime.fromtimestamp(book_question)
+print(book_question)
+
+print(book_question.strftime("%Y"))
 # book_date = datetime.date.book_question.year
-print(book_date)
 
 # book_question = datetime.fromtimestamp((int(input('What year was your book written?: '))))
 #
@@ -73,3 +74,44 @@ print(book_date)
 
 # current_date = datetime.datetime.now()
 # print(current_date)
+
+# From ChatGPT:
+def categorize_year(year):
+    # Determine the century
+    century = (year - 1) // 100 + 1
+
+    # Determine the decade
+    decade = ((year - 1) % 100 // 10) * 10
+
+    # Define century and decade names
+    century_names = {
+        1: "First",
+        2: "Second",
+        3: "Third",
+        4: "Fourth",
+        # Add more centuries as needed
+    }
+
+    decade_names = {
+        0: "Noughties",
+        10: "Tens",
+        20: "Twenties",
+        30: "Thirties",
+        40: "Forties",
+        50: "Fifties",
+        60: "Sixties",
+        70: "Seventies",
+        80: "Eighties",
+        90: "Nineties",
+    }
+
+    # Output the result
+    century_name = century_names.get(century, "Unknown Century")
+    decade_name = decade_names.get(decade, "Unknown Decade")
+
+    return f"{century_name} Century, {decade_name}"
+
+# Example usage:
+year_input = int(input("Enter a year (e.g., 1872): "))
+result = categorize_year(year_input)
+print(result)
