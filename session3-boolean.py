@@ -6,7 +6,7 @@ Input the price of a burger using input()
 Check whether the price is less than or equal (<=) 10.00
 
 Print the result in the format below
-
+gi
 Burger is within budget: True
 
 Hint: remember to convert the input from a string to a decimal with float()
