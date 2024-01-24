@@ -13,7 +13,7 @@ new_item = input(f'Add an item to your to-do list: ')
 with open('todo.txt', 'a') as todo_list:
     todo_list.write(new_item + '\n')
 
-with open('todo.txt' ,'r') as todo_list:
+with open('todo.txt', 'r') as todo_list:
     contents = todo_list.read()
 
 print(contents)
