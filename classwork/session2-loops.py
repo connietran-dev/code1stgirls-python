@@ -1,17 +1,17 @@
 # for loops!
 # Variables in loops are locally. So they're not available globally
 
-# for number in range(5):
-#     print(number)
-#
-# for character in 'Banana':
-#     print(character)
-#
-# for name in ['Connie', 'Joanna', 'Tran']:
-#     print(name)
-#
-# for number in range(5):
-#     print(f'This is loop {number + 1}') # This is a local variable
+for number in range(5):
+    print(number)
+
+for character in 'Banana':
+    print(character)
+
+for name in ['Connie', 'Joanna', 'Tran']:
+    print(name)
+
+for number in range(5):
+    print(f'This is loop {number + 1}') # This is a local variable
 
 total = 4 # This is global
 

@@ -7,34 +7,34 @@ I want to know what the first thing I need to buy is. However, when I run the pr
 What is the mistake? How do I fix it?
 
 """
-shopping_list = [
-"oranges",
-"cat food",
-"sponge cake",
-"long-grain rice",
-"cheese board",
-]
-print(shopping_list[0])
-
-
-"""
-
-Question 2 
-I'm setting up my own market stall to sell chocolates. I need a basic till to check the prices of different chocolates that I sell. 
-I've started the program and included the chocolates and their prices. Finish the program by asking the user to input an item and then output its price. 
-
-"""
-
-chocolates = {
-'white': 1.50,
-'milk': 1.20,
-'dark': 1.80,
-'vegan': 2.00,
-}
-
-chocolate_choice = input('What kind of chocolate do you want? ')
-
-print(f'Your choice of {chocolate_choice} will cost {chocolates[chocolate_choice]}')
+# shopping_list = [
+# "oranges",
+# "cat food",
+# "sponge cake",
+# "long-grain rice",
+# "cheese board",
+# ]
+# print(shopping_list[0])
+#
+#
+# """
+#
+# Question 2
+# I'm setting up my own market stall to sell chocolates. I need a basic till to check the prices of different chocolates that I sell.
+# I've started the program and included the chocolates and their prices. Finish the program by asking the user to input an item and then output its price.
+#
+# """
+#
+# chocolates = {
+# 'white': 1.50,
+# 'milk': 1.20,
+# 'dark': 1.80,
+# 'vegan': 2.00,
+# }
+#
+# chocolate_choice = input('What kind of chocolate do you want? ')
+#
+# print(f'Your choice of {chocolate_choice} will cost {chocolates[chocolate_choice]}')
 
 
 # Question 3
@@ -52,16 +52,21 @@ import random
 def get_user_numbers():
     """Gets and validates user's lottery numbers"""
     user_numbers = []
-    for i in range(1, 8):
-        while True:
-            number = int(input(f'Enter lottery number {i}: '))
-            if 1 <= number <= 49 and number not in user_numbers:
-                user_numbers.append(number)
-                break
-            elif number in user_numbers:
-                print("Duplicate number. Please enter a unique number.")
-            else:
-                print("Invalid number. Please enter a number between 1 and 49.")
+    # for i in range(1, 8):
+    #     while True:
+    #         number = int(input(f'Enter lottery number {i}: '))
+    #         if 1 <= number <= 49 and number not in user_numbers:
+    #             user_numbers.append(number)
+    #             break
+    #         elif number in user_numbers:
+    #             print("Duplicate number. Please enter a unique number.")
+    #         else:
+    #             print("Invalid number. Please enter a number between 1 and 49.")
+
+    while len(user_numbers) < 7:
+        number = random.randint(1, 49)
+        user_numbers.append(number)
+    print(user_numbers)
     return user_numbers
 
 
